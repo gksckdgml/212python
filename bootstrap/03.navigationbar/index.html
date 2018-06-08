@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>코딩 랩</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style type="text/css">
+		.jumbotron{
+			text-shadow: black 0.2em 0.2em 0.2em;
+			color: white;
+			/*background-image: url('images/jumbotronBackground.jpg');*/
+			background-image: url('http://lorempixel.com/800/600/sea');
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">코딩 랩</a>
+			</div>
+			<!-- 3. 네비게이션 바 -->
+			<!-- div.collapse|div.navbar-collapse#bs-example-navbar-collapse-1>ul.nav|ul.navbar-nav>li.active>a[href="#"]{소개}>span.sr-only^^li>a[href="#"]{교수진}^li.dropdown>a[href="#"].dropdown-toggle[data-toggle="dropdown"][role="button"][aria-haspopup="true"][aria-expanded="false"]{강의}>span.caret^ul.dropdown-menu>(li>a[href="#"]{menu $})*5 -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">소개<span class="sr-only"></span></a></li>
+					<li><a href="#">강사진</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">강의<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">C언어</a></li>
+							<li><a href="#">JAVA</a></li>
+							<li><a href="#">안드로이드</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- form.navbar-form|form.navbar-left>div.form-group>input[type="text"].form-control[placeholder="검색어 입력하세요."] -->
+				<form action="" class="navbar-form navbar-left">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="검색어 입력하세요."></imput>
+					</div>
+					<!-- button[type="submit"].btn|.btn-default{검색} -->
+					<button type="submit" class="btn btn-default">검색</button>
+				</form>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">접속하기<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">로그인</a></li>
+							<li><a href="#">회원가입</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- 2. 부트터  -->
+	<!-- div.container>div.jumbotron>(h1.text-center{코딩랩 부스터를 소개합니다.}+p.text-center{코딩랩은 IT 교육사이트 입니다. }+p.text-center>a.btn|a.btn-primary-btn|a.btn-lg[href="#"][role="button"]{코딩랩 강의실 입장하기}) -->
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="text-center">코딩랩 부스터를 소개합니다.</h1>
+			<p class="text-center">코딩랩은 IT 교육사이트 입니다. </p>
+			<p class="text-center"><a href="#" class="btn btn-primary-btn btn-lg" role="button">코딩랩 강의실 입장하기</a></p>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>

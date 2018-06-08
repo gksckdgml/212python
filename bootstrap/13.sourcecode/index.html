@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>코딩 랩</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style type="text/css">
+		.jumbotron{
+			text-shadow: black 0.2em 0.2em 0.2em;
+			color: white;
+			/*background-image: url('images/jumbotronBackground.jpg');*/
+			background-image: url('http://lorempixel.com/800/600/nature');
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+						data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand">코딩 랩</a>
+			</div>
+			<!-- 3. 네비게이션 바 -->
+			<!-- div.collapse|div.navbar-collapse#bs-example-navbar-collapse-1>ul.nav|ul.navbar-nav>li.active>a[href="#"]{소개}>span.sr-only^^li>a[href="#"]{교수진}^li.dropdown>a[href="#"].dropdown-toggle[data-toggle="dropdown"][role="button"][aria-haspopup="true"][aria-expanded="false"]{강의}>span.caret^ul.dropdown-menu>(li>a[href="#"]{menu $})*5 -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">소개<span class="sr-only"></span></a></li>
+					<li><a href="instructor.html">강사진</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">강의<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="lecture.html?lectureName=c">C언어</a></li>
+							<li><a href="lecture.html?lectureName=java">JAVA</a></li>
+							<li><a href="lecture.html?lectureName=android.html">안드로이드</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- form.navbar-form|form.navbar-left>div.form-group>input[type="text"].form-control[placeholder="검색어 입력하세요."] -->
+				<form action="" class="navbar-form navbar-left">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="검색어 입력하세요."></imput>
+					</div>
+					<!-- button[type="submit"].btn|.btn-default{검색} -->
+					<button type="submit" class="btn btn-default">검색</button>
+				</form>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">접속하기<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="login.html">로그인</a></li>
+							<li><a href="register.html">회원가입</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<!-- 2. 부트터  -->
+	<!-- div.container>div.jumbotron>(h1.text-center{코딩랩 부스터를 소개합니다.}+p.text-center{코딩랩은 IT 교육사이트 입니다. }+p.text-center>a.btn|a.btn-primary-btn|a.btn-lg[href="#"][role="button"]{코딩랩 강의실 입장하기}) -->
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="text-center">코딩랩 부스터를 소개합니다.</h1>
+			<p class="text-center">코딩랩은 IT 교육사이트 입니다. </p>
+			<p class="text-center"><a href="#" class="btn btn-primary btn-lg" role="button">코딩랩 강의실 입장하기</a></p>
+		</div>
+<!-- 6.modal start-->
+		<div class="row">
+			<div class="col-md-4">
+				<h4>	코딩 랩 특징</h4>
+				<p>	 잃은 버린 시간을 다시 찾을 수 있는 쉬운 코딩 공부방이네요.....</p>
+				<p><a class="btn btn-default" data-target="#modal" data-toggle="modal">자세히 알아보기</a></p>
+			</div>
+			<div class="col-md-4">
+				<h4>	소중한 강사진</h4>
+				<p>	 진주보다 빛나는 강사님과 함께 코딩 공부해요... ... .</p>
+				<p><a class="btn btn-default" href="#">자세히 알아보기</a></p>
+			</div>
+			<div class="col-md-4">
+				<h4>	재미있는 강의</h4>
+				<p>	 오십에 코딩을 하다... 재미있으니까 ... .</p>
+				<p><a class="btn btn-default" href="#">자세히 알아보기</a></p>
+			</div>
+		</div>
+		<hr>	
+<!-- 6.modal end-->
+<!-- 7. media start -->
+		<!-- div.panel|div.panel-primary>div.panel-heading>h3.panel-title>span.glyphicon|span.glyphicon-pencil{&nbsp;&nbsp;최신 강의 목록} -->
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title"><span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;최신 강의 목록</h3>
+			</div>
+			<div class="panel-body">
+
+				<div class="media">	
+					<div class="media-left">
+						<a href="#"><img class="media-object src="images/c.png" alt="C언어 기초 프로그래밍 강의" width="100px" height="100px"></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading"><a href="#">C언어 기초 프로그래밍 강좌</a>&nbsp;<span class="badge">New</span></h4>
+						1972년에 벨 연구소(Bell Labs)의 데니스 리치(Dennis MacAlistair Ritchie, 1941.9.9~2011.10.12)가 만든 프로그래밍 언어. 대표적인 프로그래밍 언어로 특히 대한민국에서는 프로그래머의 기본이 되는 언어. 보통 C 언어라고 한다.
+					</div>
+				</div>
+
+				<div class="media">	
+					<div class="media-left">
+						<a href="#"><img class="media-object src="images/java.png" alt="JAVA 프로그래밍 강의" width="100px" height="100px"></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading"><a href="#">JAVA언어 프로그래밍 강좌</a>&nbsp;<span class="badge">New</span></h4>
+						썬마이크로시스템즈에서 1995년에 개발된[1] 객체 지향 프로그래밍 언어. 2010년에 썬이 오라클에 인수되어서 현재 저작권자는 오라클이다.
+					</div>
+				</div>
+
+				<div class="media">	
+					<div class="media-left">
+						<a href="#"><img class="media-object src="images/android.png" alt="안드로이드  프로그래밍 강의" width="100px" height="100px"></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading"><a href="#">안드로이드 프로그래밍 강좌</a>&nbsp;<span class="badge">New</span></h4>
+						안드로이드(Android)는 리눅스 커널을 기반으로 구글에서 제작한 스마트폰과 같은 모바일 플랫폼의 운영체제와 미들웨어 및 중요 애플리케이션이 포함된 소프트웨어 집합이다. 구글은 안드로이드 체계에 대해 리눅스 커널의 제너럴 퍼블릭 라이선스(GPL)를 따르고 있으며, 새로운 체계의 버전 공개와 동시에 소스를 공개하고 있다.
+					</div>
+				</div>
+
+			</div>
+		</div>
+<!-- 7. media end -->
+
+	</div> <!-- 71: .container end -->
+<!-- 5. footer start-->
+	<footer style="background-color:#000000; color:#ffffff">	
+		<div class="container">
+			<br>
+			<div class="row">
+				<div class="col-sm-2" style="text-align:center;"><h5>Copyright &copy; 2017</h5><h5>Coding LAB</h5></div>
+				<div class="col-sm-4"><h5>대표자 소개<p>코딩랩은 프로그래밍 입문자를 위한 공간 입니다.</p></div>
+				<div class="col-sm-2"><h4 style="text-align:center">내비게이션 </h4>
+					<div class="list-group">
+						<a href="#" class="list-group-item">소개</a>
+						<a href="#" class="list-group-item">강사진</a>
+						<a href="#" class="list-group-item">과목</a>
+					</div>
+				</div>
+				<div class="col-sm-2"><h4 style="text-align:center">SNS </h4>
+					<div class="list-group">
+						<a href="#" class="list-group-item">facebook</a>
+						<a href="#" class="list-group-item">youtube</a>
+						<a href="#" class="list-group-item">naverTV</a>
+					</div>
+				</div>
+				<div class="col-sm-2"><h4 style="text-align: center"><span class="glyphicon glyphicon-ok">&nbsp;by CodingLab</span></h4></div>	
+
+			</div>
+		</div>
+	</footer>
+<!-- footer end-->
+<!-- 6.modal 창 시작 -->
+	<!-- div.row>div.modal#modal[tabindex="-1"]>div.modal-dialog>div.modal-content>div.modal-header{코딩 랩의 특징}>button.close[data-dismiss="modal"] -->
+	<div class="row">
+		<div class="modal" id="modal" tabindex="-1">
+			<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							코딩 랩의 특징
+							<button class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<!-- div.modal-body[style="text-align:center"]{코딩 랩의 특징은 쉬운 강의로 <br>만들고 싶은 홈페이지와 앱을 <br><br>뚝딱 만들어 낼 수 있네요.} -->
+						<div class="modal-body" style="text-align:center">	코딩 랩의 특징은 쉬운 강의로 		<br>만들고 싶은 홈페이지와 앱을 뚝딱 만들어 낼 수 있네요.<br><br>
+							<img src="http://lorempixel.com/250/250/" id="imagepreview" style="widht:256px; height:256px;">
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+<!-- #modal 창 끝 -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
